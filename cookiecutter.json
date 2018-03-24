@@ -1,0 +1,24 @@
+{
+    "name": "my_kotlin_project",
+    "repo_name": "{{ cookiecutter.name | lower | replace(' ', '-') | replace('_', '-') }}",
+    "bundle_root": "com.example",
+    "package_name": "{{ cookiecutter.bundle_root }}.{{ cookiecutter.repo_name | replace('-', '') | replace('_', '') }}",
+    "library_package_name": "{{ cookiecutter.package_name }}.core",
+    "kotlin_version": "1.2.30",
+    "kotlin_native_version": "0.6",
+    "group": "{{ cookiecutter.bundle_root }}",
+    "version": "1.0-SNAPSHOT",
+    "package_path": "{{ cookiecutter.package_name | replace('.', '/') }}",
+    "library_package_path": "{{ cookiecutter.library_package_name | replace('.', '/') }}",
+    
+
+    "gradle_version": "2.10",
+    "use_intellij_idea": "yes",
+    "_copy_without_render": [
+        "gradlew",
+        "gradlew.bat",
+        "gradle/wrapper/gradle-wrapper.jar",
+        "android/gradlew"
+    ]
+}
+
