@@ -31,7 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DF4EE9DD203E1DFB00C2E220 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4EE9DD203E1DFB00C2E220 /* {{ cookiecutter.name }}.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = {{ cookiecutter.name }}.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4EE9E0203E1DFB00C2E220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF4EE9E2203E1DFB00C2E220 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF4EE9E5203E1DFB00C2E220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				DF9E9717203E251A00984EE0 /* SharediOS.framework */,
-				DF4EE9DF203E1DFB00C2E220 /* Sample */,
+				DF4EE9DF203E1DFB00C2E220 /* {{ cookiecutter.name }} */,
 				DF4EE9DE203E1DFB00C2E220 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,12 +65,12 @@
 		DF4EE9DE203E1DFB00C2E220 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF4EE9DD203E1DFB00C2E220 /* Sample.app */,
+				DF4EE9DD203E1DFB00C2E220 /* {{ cookiecutter.name }}.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF4EE9DF203E1DFB00C2E220 /* Sample */ = {
+		DF4EE9DF203E1DFB00C2E220 /* {{ cookiecutter.name }} */ = {
 			isa = PBXGroup;
 			children = (
 				DF4EE9E0203E1DFB00C2E220 /* AppDelegate.swift */,
@@ -80,15 +80,15 @@
 				DF4EE9E9203E1DFB00C2E220 /* LaunchScreen.storyboard */,
 				DF4EE9EC203E1DFB00C2E220 /* Info.plist */,
 			);
-			path = Sample;
+			path = {{ cookiecutter.name }};
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF4EE9DC203E1DFB00C2E220 /* Sample */ = {
+		DF4EE9DC203E1DFB00C2E220 /* {{ cookiecutter.name }} */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF4EE9EF203E1DFB00C2E220 /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildConfigurationList = DF4EE9EF203E1DFB00C2E220 /* Build configuration list for PBXNativeTarget "{{ cookiecutter.name }}" */;
 			buildPhases = (
 				DF9E9711203E1E8800984EE0 /* Compile Kotlin Native to iOS framework */,
 				DF4EE9D9203E1DFB00C2E220 /* Sources */,
@@ -100,9 +100,9 @@
 			);
 			dependencies = (
 			);
-			name = Sample;
-			productName = Sample;
-			productReference = DF4EE9DD203E1DFB00C2E220 /* Sample.app */;
+			name = {{ cookiecutter.name }};
+			productName = {{ cookiecutter.name }};
+			productReference = DF4EE9DD203E1DFB00C2E220 /* {{ cookiecutter.name }}.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = albertgao;
+				ORGANIZATIONNAME = {{ cookiecutter.entity_name }};
 				TargetAttributes = {
 					DF4EE9DC203E1DFB00C2E220 = {
 						CreatedOnToolsVersion = 9.2;
@@ -121,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DF4EE9D8203E1DFB00C2E220 /* Build configuration list for PBXProject "Sample" */;
+			buildConfigurationList = DF4EE9D8203E1DFB00C2E220 /* Build configuration list for PBXProject "{{ cookiecutter.name }}" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF4EE9DC203E1DFB00C2E220 /* Sample */,
+				DF4EE9DC203E1DFB00C2E220 /* {{ cookiecutter.name }} */,
 			);
 		};
 /* End PBXProject section */
@@ -313,15 +313,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6DN36W56UU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build",
 				);
-				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_FILE = {{ cookiecutter.name }}/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.albertgao.Sample;
+				PRODUCT_BUNDLE_IDENTIFIER = {{ cookiecutter.package_name }};
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -333,15 +332,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6DN36W56UU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build",
 				);
-				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_FILE = {{ cookiecutter.name }}/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.albertgao.Sample;
+				PRODUCT_BUNDLE_IDENTIFIER = {{ cookiecutter.package_name }};
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF4EE9D8203E1DFB00C2E220 /* Build configuration list for PBXProject "Sample" */ = {
+		DF4EE9D8203E1DFB00C2E220 /* Build configuration list for PBXProject "{{ cookiecutter.name }}" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF4EE9ED203E1DFB00C2E220 /* Debug */,
@@ -360,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF4EE9EF203E1DFB00C2E220 /* Build configuration list for PBXNativeTarget "Sample" */ = {
+		DF4EE9EF203E1DFB00C2E220 /* Build configuration list for PBXNativeTarget "{{ cookiecutter.name }}" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF4EE9F0203E1DFB00C2E220 /* Debug */,

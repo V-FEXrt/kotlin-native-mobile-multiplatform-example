@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Sample
+//  {{ cookiecutter.name }} 
 //
-//  Created by Albert Gao on 22/02/18.
-//  Copyright © 2018 albertgao. All rights reserved.
+//  Created by {{ cookiecutter.entity_name }} on 22/02/18.
+//  Copyright © 2018 {{ cookiecutter.entity_name }}. All rights reserved.
 //
 
 import UIKit
