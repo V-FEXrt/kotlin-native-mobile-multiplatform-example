@@ -12,8 +12,8 @@
 		DF4EE9E6203E1DFB00C2E220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF4EE9E4203E1DFB00C2E220 /* Main.storyboard */; };
 		DF4EE9E8203E1DFB00C2E220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4EE9E7203E1DFB00C2E220 /* Assets.xcassets */; };
 		DF4EE9EB203E1DFB00C2E220 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF4EE9E9203E1DFB00C2E220 /* LaunchScreen.storyboard */; };
-		DF9E9718203E251A00984EE0 /* SharediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E9717203E251A00984EE0 /* SharediOS.framework */; };
-		DF9E9719203E252000984EE0 /* SharediOS.framework in Embed generated iOS framework */ = {isa = PBXBuildFile; fileRef = DF9E9717203E251A00984EE0 /* SharediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF9E9718203E251A00984EE0 /* {{ cookiecutter.iOS_library_name }}.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E9717203E251A00984EE0 /* {{ cookiecutter.iOS_library_name }}.framework */; };
+		DF9E9719203E252000984EE0 /* {{ cookiecutter.iOS_library_name }}.framework in Embed generated iOS framework */ = {isa = PBXBuildFile; fileRef = DF9E9717203E251A00984EE0 /* {{ cookiecutter.iOS_library_name }}.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DF9E9719203E252000984EE0 /* SharediOS.framework in Embed generated iOS framework */,
+				DF9E9719203E252000984EE0 /* {{ cookiecutter.iOS_library_name }}.framework in Embed generated iOS framework */,
 			);
 			name = "Embed generated iOS framework";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +38,7 @@
 		DF4EE9E7203E1DFB00C2E220 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF4EE9EA203E1DFB00C2E220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF4EE9EC203E1DFB00C2E220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF9E9717203E251A00984EE0 /* SharediOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SharediOS.framework; path = build/SharediOS.framework; sourceTree = "<group>"; };
+		DF9E9717203E251A00984EE0 /* {{ cookiecutter.iOS_library_name }}.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = {{ cookiecutter.iOS_library_name }}.framework; path = build/{{ cookiecutter.iOS_library_name }}.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF9E9718203E251A00984EE0 /* SharediOS.framework in Frameworks */,
+				DF9E9718203E251A00984EE0 /* {{ cookiecutter.iOS_library_name }}.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		DF4EE9D4203E1DFB00C2E220 = {
 			isa = PBXGroup;
 			children = (
-				DF9E9717203E251A00984EE0 /* SharediOS.framework */,
+				DF9E9717203E251A00984EE0 /* {{ cookiecutter.iOS_library_name }}.framework */,
 				DF4EE9DF203E1DFB00C2E220 /* {{ cookiecutter.name }} */,
 				DF4EE9DE203E1DFB00C2E220 /* Products */,
 			);

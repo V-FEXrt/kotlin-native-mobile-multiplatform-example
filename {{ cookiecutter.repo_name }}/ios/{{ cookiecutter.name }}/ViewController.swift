@@ -7,14 +7,15 @@
 //
 
 import UIKit
-import SharediOS
+import {{ cookiecutter.iOS_library_name }}
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let text = SharediOS.SOSSample().checkPlatform()
+        
+        let text = {{ cookiecutter.iOS_library_name }}.{{ cookiecutter.iOS_class_prefix }}Sample().checkPlatform()
         label.text = text
     }
 

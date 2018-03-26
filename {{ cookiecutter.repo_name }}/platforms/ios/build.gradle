@@ -1,7 +1,7 @@
 apply plugin: 'konan'
 
 konanArtifacts {
-    framework('SharediOS', targets: ['iphone', 'iphone_sim']) {
+    framework('{{ cookiecutter.iOS_library_name }}', targets: ['iphone', 'iphone_sim']) {
         enableDebug true
         enableMultiplatform true
 
@@ -13,7 +13,7 @@ konanArtifacts {
         srcDir 'main'
     }
 
-    program('shared-ios-test') {
+    program('{{ cookiecutter.iOS_library_name }}-test') {
         srcDir 'test'
         commonSourceSet 'test'
         extraOpts '-tr'
